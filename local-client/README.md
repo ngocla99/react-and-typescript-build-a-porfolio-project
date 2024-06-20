@@ -6,8 +6,6 @@ An interactive, browser-based coding environment that allows users to execute co
 
 - [x] Build an in-browser transpiler + bundler
 - [x] Dynamic fetching and loading of npm modules
-- [x] Mangage multi-package projects
-- [x] Creating the CLI
 - [x] Caching for the imported package in IndexedDB
 - [x] Safely handling untrusted code execution, handling errors
 - [x] Manage state and handle complicated logic flows with redux
@@ -18,9 +16,8 @@ An interactive, browser-based coding environment that allows users to execute co
 ## Tech Stack
 
 - [esbuild](https://esbuild.github.io) - transiple and bundle
-- [lerna](https://lerna.js.org) - manage multi-package
+- [lerna](https://lerna.js.org) - manage multi-package project
 - [Redux](https://redux.js.org) - manage state
-- [Commander](https://www.npmjs.com/package/commander) - nodejs command-line interfaces
 - [localForage](https://localforage.github.io/localForage) - asynchronous data store
 - [monaco editor](https://www.npmjs.com/package/@monaco-editor/react) - code editor
 - [react markdown editor](https://www.npmjs.com/package/@uiw/react-markdown-editor) - markdown editor
