@@ -1,6 +1,6 @@
 {
   "name": "@jsnote-nemo/local-api",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "> TODO: description",
   "author": "ngocla99 <ngoc.leanh1999@gmail.com>",
   "homepage": "",
@@ -30,9 +30,9 @@
     "typescript": "^5.4.5"
   },
   "dependencies": {
+    "@jsnote-nemo/local-client": "file:../local-client",
     "cors": "^2.8.5",
     "express": "^4.19.2",
-    "http-proxy-middleware": "^3.0.0",
-    "@jsnote-nemo/local-client": "file:../local-client"
+    "http-proxy-middleware": "^3.0.0"
   }
 }

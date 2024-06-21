@@ -1,6 +1,6 @@
 {
   "name": "jsnote-nemo",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "> TODO: description",
   "author": "ngocla99 <ngoc.leanh1999@gmail.com>",
   "homepage": "",
@@ -28,9 +28,9 @@
     "@jsnote-nemo/local-client": "file:../local-client"
   },
   "devDependencies": {
-    "commander": "^12.1.0",
     "@jsnote-nemo/local-api": "file:../local-api",
-    "typescript": "^5.4.5",
-    "esbuild": "^0.21.5"
+    "commander": "^12.1.0",
+    "esbuild": "^0.21.5",
+    "typescript": "^5.4.5"
   }
 }
