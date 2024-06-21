@@ -15,7 +15,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.serveCommand = void 0;
 const path_1 = __importDefault(require("path"));
 const commander_1 = require("commander");
-const local_cli_1 = require("local-cli");
+const local_api_1 = require("@jsnote-nemo/local-api");
 const isProduction = process.env.NODE_ENV === "production";
 const isLocalApiError = (err) => {
     return typeof err.code === "string";
@@ -27,7 +27,7 @@ exports.serveCommand = new commander_1.Command()
     .action((...args_1) => __awaiter(void 0, [...args_1], void 0, function* (filename = "notebook.js", options) {
     try {
         const dir = path_1.default.join(process.cwd(), path_1.default.dirname(filename));
-        yield (0, local_cli_1.serve)(parseInt(options.port), path_1.default.basename(filename), dir, !isProduction);
+        yield (0, local_api_1.serve)(parseInt(options.port), path_1.default.basename(filename), dir, !isProduction);
         console.log(`🐛 Opened ${filename}. Navigate to http://localhost:${options.port} to edit the file`);
     }
     catch (err) {

@@ -1,5 +1,5 @@
 {
-  "name": "cli",
+  "name": "jsnote-nemo",
   "version": "0.0.0",
   "description": "> TODO: description",
   "author": "ngocla99 <ngoc.leanh1999@gmail.com>",
@@ -10,21 +10,27 @@
     "test": "__tests__"
   },
   "files": [
-    "lib"
+    "dist"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "bin": "dist/index.js",
   "repository": {
     "type": "git",
     "url": "git@github.com-home:ngocla99/react-and-typescript-build-a-porfolio-project.git"
   },
   "scripts": {
-    "test": "node ./__tests__/cli.test.js",
-    "start": "tsc --watch --preserveWatchOutput"
+    "start": "tsc --watch --preserveWatchOutput",
+    "prepublishOnly": "esbuild lib/index.ts --platform=node --outfile=dist/index.js --bundle --minify --define:process.env.NODE_ENV='production'"
   },
   "dependencies": {
-    "commander": "^12.1.0",
-    "local-cli": "file:../local-cli"
+    "@jsnote-nemo/local-client": "file:../local-client"
   },
   "devDependencies": {
-    "typescript": "^5.4.5"
+    "commander": "^12.1.0",
+    "@jsnote-nemo/local-api": "file:../local-api",
+    "typescript": "^5.4.5",
+    "esbuild": "^0.21.5"
   }
 }
