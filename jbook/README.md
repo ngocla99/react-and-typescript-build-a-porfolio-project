@@ -8,6 +8,7 @@ An interactive, browser-based coding environment that allows users to execute co
 - [x] Dynamic fetching and loading of npm modules
 - [x] Mangage multi-package projects
 - [x] Creating the CLI
+- [x] Publishing to NPM
 - [x] Caching for the imported package in IndexedDB
 - [x] Safely handling untrusted code execution, handling errors
 - [x] Manage state and handle complicated logic flows with redux
